@@ -1,0 +1,92 @@
+:root {
+    --banner-bg: #4267B2;
+    --banner-heading-color: #f9fafb;
+    --banner-heading-fontsize: 32px;
+    --banner-heading-fontweight: 700;
+    --banner-heading-align: left;
+    --banner-subheading-color: #f9fafb;
+    --banner-subheading-fontsize: 18px;
+    --banner-subheading-fontweight: 400;
+    --banner-description-color: #f9fafb;
+    --banner-description-fontsize: 18px;
+    --banner-description-fontweight: 400;
+    --banner-description-lineheight: 2.0;
+    --banner-section-heading-color: #f9fafb;
+    --banner-section-heading-fontsize: 26px;
+    --banner-section-heading-fontweight: 700;
+    --banner-section-plus-color: #f9fafb;
+    --banner-section-plus-fontsize: 88px;
+    --banner-section-plus-lineheight: 38px;
+}
+
+@media only screen and (max-width: 992px) {
+    :root {
+        --banner-bg: #4267B2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --banner-heading-fontsize: 28px;
+        --banner-subheading-fontsize: 14px;
+        --banner-description-fontsize: 16px;
+        --banner-description-lineheight: 1.6;
+        --banner-section-heading-fontsize: 18px;
+    }
+}
+/* .banner-wrapper{
+    background-image: url("../images/counter_bg_1-4-1.jpg");
+    opacity: 0.5;
+} */
+
+.banner-section {
+    position: relative;
+    background-color: var(--banner-bg);
+    background-image: url('../images/landingpage-bg.svg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover!important;
+    background-size: cover!important;
+    background-position: bottom right;
+}
+
+.banner-main-heading {
+    color: var(--banner-heading-color);
+    font-size: var(--banner-heading-fontsize);
+    font-weight: var(--banner-heading-fontweight);
+    text-align: var(--banner-heading-align);
+    letter-spacing: 0;
+}
+
+.banner-sub-heading {
+    color: var(--banner-subheading-color);
+    font-size: var(--banner-subheading-fontsize);
+    font-weight: var(--banner-subheading-fontweight);
+    letter-spacing: 0;
+}
+
+.banner-main-description {
+    color: var(--banner-description-color);
+    font-size: var(--banner-description-fontsize);
+    font-weight: var(--banner-description-fontweight);
+    line-height: var(--banner-description-lineheight);
+    margin-top: 8px;
+}
+
+.algorithmic-wealthtech__wrapper .heading {
+    color: var(--banner-section-heading-color);
+    font-size: var(--banner-section-heading-fontsize);
+    font-weight: var(--banner-section-heading-fontweight);
+}
+
+.algorithmic-wealthtech__wrapper .plus-icon {
+    color: var(--banner-section-plus-color);
+    font-size: var(--banner-section-plus-fontsize);
+    line-height: var(--banner-section-plus-lineheight);
+    opacity: 0.2;
+}
+
+@media only screen and (max-width: 991px) {
+    .algorithmic-wealthtech__wrapper img {
+        max-width: 85%;
+    }
+}
